@@ -57,7 +57,6 @@ describe('user.route.ts', () => {
       expect(response.body.payload.data[0]).toHaveProperty('email');
       expect(response.body.payload.data[0]).toHaveProperty('password');
       expect(response.body.payload.data[0]).toHaveProperty('refreshToken');
-      expect(response.body.payload.data[0]).toHaveProperty('photo');
     },
     TIMEOUT
   );
@@ -84,9 +83,8 @@ describe('user.route.ts', () => {
       expect(response.body.payload.data).toHaveProperty('email');
       expect(response.body.payload.data).toHaveProperty('password');
       expect(response.body.payload.data).toHaveProperty('refreshToken');
-      expect(response.body.payload.data).toHaveProperty('roles');
+      expect(response.body.payload.data).toHaveProperty('movies');
       expect(response.body.payload.data.roles.length).toBeGreaterThanOrEqual(1);
-      expect(response.body.payload.data).toHaveProperty('photo');
     },
     TIMEOUT
   );
@@ -99,8 +97,8 @@ describe('user.route.ts', () => {
         .field('name', 'username-' + numberRandom)
         .field('email', numberRandom + '@user.com')
         .field('password', numberRandom)
-        .field('roles', 1)
-        .field('roles', 2)
+        .field('movies', 1)
+        .field('movies', 2)
         .set('Authorization', `Bearer ${tokenValid}`);
 
       expect(response.statusCode).toBe(411);

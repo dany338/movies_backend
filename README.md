@@ -17,3 +17,9 @@
 4. sudo nvm --version
 5. sudo nvm install 14.16.1
 6. node -v
+
+Steps to run this project:
+
+1. Run `npm i` command
+2. Run `docker-compose up` command
+3. Run `npm start` command
