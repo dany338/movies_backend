@@ -32,28 +32,41 @@ http://localhost:3000/movies
 1. endpoints for user:
 
 1.1. User List: GET http://localhost:3000/users/
+
 1.2. User Id: GET http://localhost:3000/users/:id
+
 1.3. User List by page: GET http://localhost:3000/users/page/:page
+
 1.4. User Create: POST http://localhost:3000/users/
+
 1.5. User Update: PUT http://localhost:3000/users/:id
+
 1.6. User Update: DELETE http://localhost:3000/users/:id
 
 2. endpoints for auth:
 
 2.1. User List: GET http://localhost:3000/auth/login
+
 2.2. User Id: GET http://localhost:3000/auth/request-new-access-token/:refreshToken
 
 3. endpoints for movie:
 
 3.1. Movie List: GET http://localhost:3000/movies/
+
 3.2. Movie Id: GET http://localhost:3000/movies/:id
+
 3.3. Movie List by page: GET http://localhost:3000/movies/page/:page
+
 3.4. Movie Create: POST http://localhost:3000/movies/
+
 3.5. Movie Update: PUT http://localhost:3000/movies/:id
+
 3.6. Movie Update: DELETE http://localhost:3000/movies/:id
 
 diagrams from diagram.net:
 
 https://app.diagrams.net/#G1cM-MdIOoNTJVVJTYiIsrBZmlF0KPNJNS
+
+https://drive.google.com/file/d/1cM-MdIOoNTJVVJTYiIsrBZmlF0KPNJNS/view?usp=sharing
 
 review this folder diagrams
