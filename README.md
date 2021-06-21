@@ -23,3 +23,33 @@ Steps to run this project:
 1. Run `npm i` command
 2. Run `docker-compose up` command
 3. Run `npm start` command
+
+Steps to run endpoints in postman:
+http://localhost:3000/users
+http://localhost:3000/auth
+http://localhost:3000/movies
+
+1. endpoints for user:
+User List: GET http://localhost:3000/users/
+User Id: GET http://localhost:3000/users/:id
+User List by page: GET http://localhost:3000/users/page/:page
+User Create: POST http://localhost:3000/users/
+User Update: PUT http://localhost:3000/users/:id
+User Update: DELETE http://localhost:3000/users/:id
+
+2. endpoints for auth:
+User List: GET http://localhost:3000/auth/login
+User Id: GET http://localhost:3000/auth/request-new-access-token/:refreshToken
+
+3. endpoints for movie:
+User List: GET http://localhost:3000/movies/
+User Id: GET http://localhost:3000/movies/:id
+User List by page: GET http://localhost:3000/movies/page/:page
+User Create: POST http://localhost:3000/movies/
+User Update: PUT http://localhost:3000/movies/:id
+User Update: DELETE http://localhost:3000/movies/:id
+
+diagrams from diagram.net:
+https://app.diagrams.net/#G1cM-MdIOoNTJVVJTYiIsrBZmlF0KPNJNS
+
+review this folder diagrams

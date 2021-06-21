@@ -27,7 +27,7 @@ export class Movie {
   @Column({ type: 'boolean' })
   public: boolean;
 
-  @ManyToOne((type) => User, (user) => user.movies)
+  @ManyToOne(() => User, (user) => user.movies)
   @JoinTable()
   user: User;
 }

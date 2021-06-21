@@ -1,3 +1,5 @@
+/* eslint-disable no-console */
+/* eslint-disable no-useless-constructor */
 import { Application } from 'express';
 import http from 'http';
 import { AddressInfo } from 'net';

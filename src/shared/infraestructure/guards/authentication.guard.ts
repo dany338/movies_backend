@@ -1,3 +1,5 @@
+/* eslint-disable no-console */
+/* eslint-disable @typescript-eslint/explicit-module-boundary-types */
 import { Request, Response, NextFunction } from 'express';
 import { IError } from '../../../helper/errors.handler';
 import { UserService } from '../../../user/application/user.service';

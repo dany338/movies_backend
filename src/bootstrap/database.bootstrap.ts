@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/explicit-module-boundary-types */
+/* eslint-disable no-console */
 import { createConnection } from 'typeorm';
 
 import yenv from 'yenv';

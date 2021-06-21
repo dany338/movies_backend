@@ -1,3 +1,5 @@
+/* eslint-disable prettier/prettier */
+/* eslint-disable no-console */
 import { UserModel } from '../domain/user.model';
 import { OperationRepository } from '../../shared/infraestructure/operation.repository';
 import { UserRepository } from '../application/user.repository';
@@ -8,8 +10,7 @@ import { getRepository, Repository } from 'typeorm';
 import { ResponseDto } from '../../helper/response.dto';
 export class UserOperation
   extends OperationRepository<UserModel>
-  implements UserRepository
-{
+  implements UserRepository {
   constructor() {
     super(User);
   }

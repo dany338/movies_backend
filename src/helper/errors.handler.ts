@@ -1,3 +1,6 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
+/* eslint-disable @typescript-eslint/explicit-module-boundary-types */
+/* eslint-disable no-prototype-builtins */
 import { Request, Response, NextFunction } from 'express';
 
 export interface IError extends Error {

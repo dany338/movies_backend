@@ -3,5 +3,5 @@ export interface Result<T> {
   payload: {
     data: T | T[];
     total?: number;
-  }
+  };
 }

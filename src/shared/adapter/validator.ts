@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/explicit-module-boundary-types */
+/* eslint-disable no-prototype-builtins */
 import { NextFunction, Request, Response } from 'express';
 import { IError } from '../../helper/errors.handler';
 export class Validators {

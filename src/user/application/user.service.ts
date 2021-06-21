@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/explicit-module-boundary-types */
 import * as bcryptjs from 'bcryptjs';
 import { v4 as uuidv4 } from 'uuid';
 import jwt from 'jwt-simple';

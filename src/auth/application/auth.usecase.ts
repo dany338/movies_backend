@@ -1,3 +1,6 @@
+/* eslint-disable no-console */
+/* eslint-disable no-useless-constructor */
+/* eslint-disable @typescript-eslint/explicit-module-boundary-types */
 import { UserService } from '../../user/application/user.service';
 import { UserModel } from '../../user/domain/user.model';
 import { AuthRepository } from './auth.repository';

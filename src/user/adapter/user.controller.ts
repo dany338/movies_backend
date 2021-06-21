@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/explicit-module-boundary-types */
+/* eslint-disable no-useless-constructor */
 import { Request, Response } from 'express';
 import { UserUseCase } from '../application/user.usecase';
 import { UserModel } from '../domain/user.model';

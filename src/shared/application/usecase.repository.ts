@@ -1,3 +1,4 @@
+/* eslint-disable no-useless-constructor */
 import { RepositoryBase } from './base.repository';
 import { Result } from './result.interface';
 

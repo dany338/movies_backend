@@ -1,3 +1,5 @@
+/* eslint-disable no-console */
+/* eslint-disable @typescript-eslint/explicit-module-boundary-types */
 import { MovieRepository } from '../../movie/application/movie.repository';
 import { Result } from '../../shared/application/result.interface';
 import { UseCaseRepository } from '../../shared/application/usecase.repository';
@@ -30,7 +32,7 @@ export class UserUseCase extends UseCaseRepository<UserModel, UserRepository> {
     const listMovies: any[] = [];
     entity.movies.forEach((movie) => {
       console.log('movie', movie),
-      listMovies.push(this.operationMovie.insert(movie));
+        listMovies.push(this.operationMovie.insert(movie));
     });
 
     const movies = await Promise.all(listMovies);

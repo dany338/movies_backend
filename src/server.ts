@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 import app from './app';
 import { ServerBootstrap } from './bootstrap/server.bootstrap';
 import {
