@@ -69,9 +69,8 @@ describe('user.route.ts', () => {
         .field('name', 'username-' + numberRandom)
         .field('email', numberRandom + '@user.com')
         .field('password', numberRandom)
-        .field('roles', 1)
-        .field('roles', 2)
-        .attach('photo', path.join(__dirname, '../', '/mocks/medico.jpg'))
+        .field('movies', 1)
+        .field('movies', 2)
         .set('Authorization', `Bearer ${tokenValid}`);
 
       expect(response.statusCode).toBe(200);
