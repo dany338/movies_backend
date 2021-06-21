@@ -30,24 +30,24 @@ http://localhost:3000/auth
 http://localhost:3000/movies
 
 1. endpoints for user:
-User List: GET http://localhost:3000/users/
-User Id: GET http://localhost:3000/users/:id
-User List by page: GET http://localhost:3000/users/page/:page
-User Create: POST http://localhost:3000/users/
-User Update: PUT http://localhost:3000/users/:id
-User Update: DELETE http://localhost:3000/users/:id
+1.1 User List: GET http://localhost:3000/users/
+1.2 User Id: GET http://localhost:3000/users/:id
+1.3 User List by page: GET http://localhost:3000/users/page/:page
+1.4 User Create: POST http://localhost:3000/users/
+1.5 User Update: PUT http://localhost:3000/users/:id
+1.6 User Update: DELETE http://localhost:3000/users/:id
 
 2. endpoints for auth:
-User List: GET http://localhost:3000/auth/login
-User Id: GET http://localhost:3000/auth/request-new-access-token/:refreshToken
+2.1 User List: GET http://localhost:3000/auth/login
+2.2 User Id: GET http://localhost:3000/auth/request-new-access-token/:refreshToken
 
 3. endpoints for movie:
-User List: GET http://localhost:3000/movies/
-User Id: GET http://localhost:3000/movies/:id
-User List by page: GET http://localhost:3000/movies/page/:page
-User Create: POST http://localhost:3000/movies/
-User Update: PUT http://localhost:3000/movies/:id
-User Update: DELETE http://localhost:3000/movies/:id
+3.1 User List: GET http://localhost:3000/movies/
+3.2 User Id: GET http://localhost:3000/movies/:id
+3.3 User List by page: GET http://localhost:3000/movies/page/:page
+3.4 User Create: POST http://localhost:3000/movies/
+3.5 User Update: PUT http://localhost:3000/movies/:id
+3.6 User Update: DELETE http://localhost:3000/movies/:id
 
 diagrams from diagram.net:
 https://app.diagrams.net/#G1cM-MdIOoNTJVVJTYiIsrBZmlF0KPNJNS
