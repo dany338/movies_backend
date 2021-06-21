@@ -1,7 +1,6 @@
 import app from '../../src/app';
 import request from 'supertest';
 import { DatabaseBootstrap } from '../../src/bootstrap/database.bootstrap';
-import path from 'path';
 
 const databaseBootstrap = new DatabaseBootstrap();
 
