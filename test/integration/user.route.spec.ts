@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import app from '../../src/app';
 import request from 'supertest';
 import { DatabaseBootstrap } from '../../src/bootstrap/database.bootstrap';
