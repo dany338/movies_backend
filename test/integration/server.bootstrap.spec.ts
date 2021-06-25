@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import app from '../../src/app';
 import { ServerBootstrap } from '../../src/bootstrap/server.bootstrap';
 

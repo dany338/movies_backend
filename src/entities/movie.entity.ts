@@ -1,13 +1,7 @@
-import {
-  Column,
-  Entity,
-  JoinTable,
-  ManyToOne,
-  PrimaryGeneratedColumn,
-} from 'typeorm';
+import { Column, Entity, ManyToOne, PrimaryGeneratedColumn } from 'typeorm';
 import { User } from './user.entity';
 
-@Entity({ name: 'role' })
+@Entity({ name: 'movie' })
 export class Movie {
   @PrimaryGeneratedColumn()
   id: number;
@@ -28,6 +22,5 @@ export class Movie {
   public: boolean;
 
   @ManyToOne(() => User, (user) => user.movies)
-  @JoinTable()
   user: User;
 }

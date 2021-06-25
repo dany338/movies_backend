@@ -25,8 +25,14 @@
 #### Steps to run this project:
 
 1. Run `npm i` command
-2. Run `docker-compose up` command
+2. Run `docker-compose up` command levantar el servidor con typeorm `docker-compose up -d`
 3. Run `npm start` command
+
+- Install global for run this project
+
+```sh
+npm i -g ts-node
+```
 
 ```sh
 4. npm run develop
@@ -118,6 +124,39 @@ This project is to base hexagonal architecture
 AccessToken and refreshToken for implement the security
 
 The tokens is send with the registers of the users
+
+TIMEOUT: 1200000 = 20 minutes after this is neccesary refresh the token
+
+```sh
+errors.handler.ts
+Middleware de manejo de errores que le envio al usuario:
+static generic: metodo generico para generar errores que cosas le envio a los usuarios dependiendo del entorno
+```
+
+#### Some ligraries:
+
+```sh
+yenv: Environment Variables
+BD: MYSQL:
+```
+
+```sh
+Also is possible change the file env.yaml by your local database:
+development:
+  PORT: 3000
+  DATABASE:
+    MYSQL:
+      HOST: localhost
+      TYPE: mysql
+      PORT: 3306
+      DATABASE: movies_backend
+      USERNAME: root
+      PASSWORD:
+      SYNCHRONIZE: true
+      ENTITIES: 'src/entities/*.entity.ts'
+
+I suggest install xampp for simulate your server into local machine, and them init the server
+```
 
 (https://raw.githubusercontent.com/dany338/movies_backend/master/diagrams/Movies%20Backend%20Test-Model.png)
 

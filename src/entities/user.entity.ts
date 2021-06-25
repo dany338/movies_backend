@@ -18,6 +18,6 @@ export class User {
   @Column({ type: 'varchar', length: 100 })
   refreshToken: string;
 
-  @OneToMany(() => Movie, (movie) => movie.user)
+  @OneToMany(() => Movie, (movie) => movie.user) // { cascade: true }
   movies: Movie[];
 }

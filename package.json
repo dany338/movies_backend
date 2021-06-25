@@ -10,7 +10,6 @@
     "test:config": "cross-env NODE_ENV=test jest --showConfig",
     "test:clear": "cross-env NODE_ENV=test jest --clearCache",
     "test:coverage": "cross-env NODE_ENV=test jest --coverage",
-    "test:coverage:unit": "npm run test:unit -- --coverage",
     "test:coverage:integration": "npm run test:integration -- --coverage",
     "lint:report": "eslint --ext ts src/ -f html -o reports/lint.html",
     "format": "prettier --write src/**/*.ts",
@@ -18,7 +17,8 @@
     "compiler": "tsc src/server",
     "clean": "rimraf cache dist reports coverage",
     "build": "tsc && gulp minify",
-    "develop": "nodemon src/server.ts"
+    "develop": "nodemon src/server.ts",
+    "serve": "cross-env NODE_ENV=production node dist/server.js"
   },
   "repository": {
     "type": "git",
@@ -41,6 +41,7 @@
     "moment": "^2.29.1",
     "mysql2": "^2.2.5",
     "nodemailer": "^6.6.1",
+    "reflect-metadata": "^0.1.13",
     "typeorm": "^0.2.34",
     "uuid": "^8.3.2",
     "yenv": "^3.0.0"
