@@ -8,6 +8,7 @@ import yenv from 'yenv';
 const env = yenv();
 export class UserService {
   static async cryptPassword(password: string): Promise<string> {
+    // Este metodo como no depende de algo mas dentro de la clase User Service lo podemos volver estatico
     return await bcryptjs.hash(password, 10);
   }
 

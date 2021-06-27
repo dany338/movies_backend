@@ -8,22 +8,15 @@ import { Result } from '../../shared/application/result.interface';
 import { OperationService } from '../../shared/infraestructure/operation.service';
 import { getRepository, Repository } from 'typeorm';
 import { ResponseDto } from '../../helper/response.dto';
+// Operaciones basicas para la base de datos
 export class UserOperation
   extends OperationRepository<UserModel>
-  implements UserRepository {
+  implements UserRepository { // al invertir esta dependencia no voy a tener problemas en la capa de aplicacion 
   constructor() {
-    super(User);
+    super(User); // User es la entidad
   }
 
-  async getOne(
-    where: object = {},
-    relations: string[] = []
-  ): Promise<UserModel> {
-    const repository: Repository<UserModel> = getRepository(User);
-    const data = await repository.findOne({ where, relations });
-    return data;
-  }
-
+  // ya tengo un metodo cifrado y que define los principios de SOLID
   async insertCipher(entity: UserModel): Promise<Result<UserModel>> {
     const trace: string = OperationService.getTrace();
     const repository: Repository<User> = getRepository(User);

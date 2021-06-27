@@ -1,7 +1,10 @@
 /* eslint-disable no-useless-constructor */
 import { RepositoryBase } from './base.repository';
 import { Result } from './result.interface';
-
+// la clase UseCaseRepository tiene dos tipos de datos genericos U es un tipo que esta herando de RepositoryBase que a su vez esta con el tipo T
+// no tengo que estar creando cada caso de uso por cada entidad salvo que existan otros diferentes a los comunes
+// se usa esta clase intermedia porque no siempre mis casos de uso van caber dentro de lo que esta eh RepositoryBase
+// Esta clase y la otra de RepositoryBase estan hechas para aumentar la productividad
 export class UseCaseRepository<T, U extends RepositoryBase<T>> {
   constructor(public operation: U) {}
 

@@ -1,5 +1,6 @@
 import { Result } from './result.interface';
-
+// los casos de uso genericos
+// El segundo principio de abierto cerrado habla de clases pero tambien se aplica a interfaces, el cuarto principio de solid habla de la segregación de clases
 export interface RepositoryBase<T> {
   list(where: object, relations: string[], order: object): Promise<Result<T>>;
   listOne(where: object, relations: string[]): Promise<Result<T>>;

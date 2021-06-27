@@ -119,6 +119,18 @@ This project is to base hexagonal architecture
 
 3.1. Example for user: UserEntity
 
+#### Los principios SOLID
+
+```sh
+Los 5 principios SOLID de diseño de aplicaciones de software son:
+
+S – Single Responsibility Principle (SRP)
+O – Open/Closed Principle (OCP)
+L – Liskov Substitution Principle (LSP)
+I – Interface Segregation Principle (ISP)
+D – Dependency Inversion Principle (DIP)
+```
+
 #### Security:
 
 AccessToken and refreshToken for implement the security
@@ -157,6 +169,12 @@ development:
 
 I suggest install xampp for simulate your server into local machine, and them init the server
 ```
+
+#### Create Account in aws:
+
+https://console.aws.amazon.com/iam/home?region=us-east-2#/users
+
+RDS: database relational > MySQL > Dev/Test > Burstable classes (includes t classes)
 
 (https://raw.githubusercontent.com/dany338/movies_backend/master/diagrams/Movies%20Backend%20Test-Model.png)
 
