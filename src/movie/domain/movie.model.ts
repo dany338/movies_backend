@@ -4,6 +4,6 @@ export interface MovieModel {
   gender: string;
   rating: number;
   description: string;
-  public: number;
+  public: boolean;
   user: any;
 }

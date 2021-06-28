@@ -8,7 +8,11 @@ export class RoleController {
   constructor(private useCase: MovieUseCase) {}
 
   async list(req: Request, res: Response) {
-    const result = await this.useCase.list();
+    // const params = req.params;
+    // const public = true;
+    // const user = +params.user;
+    // [{ user }, { public }]
+    const result = await this.useCase.list(); // { user, public }
     res.json(result);
   }
 
@@ -24,6 +28,13 @@ export class RoleController {
     const params = req.params;
     const page = +params.page;
     const result = await this.useCase.listByPage(page, 20);
+    res.json(result);
+  }
+
+  async listByUserAndPublic(req: Request, res: Response) {
+    const params = req.params;
+    const where = [{ user: +params.user }, { public: true }]; // Querying with OR operator:
+    const result = await this.useCase.listByUserAndPublic(where);
     res.json(result);
   }
 

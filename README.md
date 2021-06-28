@@ -131,6 +131,8 @@ I – Interface Segregation Principle (ISP)
 D – Dependency Inversion Principle (DIP)
 ```
 
+Disminuir la dependencia entre capas, bajar el acoplamiento
+
 #### Security:
 
 AccessToken and refreshToken for implement the security

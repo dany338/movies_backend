@@ -13,6 +13,11 @@ export const schemas = {
       page: Joi.number().min(0).required(),
     }),
   },
+  LIST_BY_USER_AND_PUBLIC: {
+    params: Joi.object({
+      user: Joi.number().min(1).required(),
+    }),
+  },
   INSERT: {
     body: Joi.object({
       name: Joi.string().required(),

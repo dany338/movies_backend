@@ -30,6 +30,11 @@ route.get(
   Validators.validate(schemas.LIST_BY_PAGE),
   controller.listByPage.bind(controller)
 );
+route.get(
+  '/user/:user',
+  Validators.validate(schemas.LIST_BY_USER_AND_PUBLIC),
+  controller.listByUserAndPublic.bind(controller)
+);
 route.post(
   '/',
   AuthenticationGuard.canActivate,
