@@ -21,15 +21,17 @@ export class UserUseCase extends UseCaseRepository<UserModel, UserRepository> {
     entity.password = await UserService.cryptPassword(entity.password); // el usuario va a necesitar que el password este cifrado
     entity.refreshToken = UserService.generateRefreshToken();
 
-    const listMovies: any[] = [];
-    entity.movies.forEach((movie) => {
-      console.log('movie', movie),
-        listMovies.push(this.operationMovie.insert(movie));
-    });
+    const result = await this.operation.insertCipher(entity);
+    // console.log('result insertCipher', result);
+    // const listMovies: any[] = [];
+    // entity.movies.forEach((movie) => {
+    //   console.log('movie', movie);
+    //   movie.user = result.payload.data;
+    //   listMovies.push(this.operationMovie.insert(movie));
+    // });
 
-    const movies = await Promise.all(listMovies);
-    entity.movies = movies;
-
-    return this.operation.insertCipher(entity);
+    // const movies = await Promise.all(listMovies);
+    // entity.movies = movies;
+    return result;
   }
 }

@@ -23,7 +23,7 @@ export class MovieOperation
   ): Promise<Result<MovieModel>> {
     const trace: string = OperationService.getTrace();
     const repository: Repository<Movie> = getRepository(Movie);
-    const data: Movie[] = await repository.find({ where, relations, order });
+    const data: MovieModel[] = await repository.find({ where, relations, order });
     console.log('listByUserAndPublic', data);
     return ResponseDto.format(trace, data);
   }

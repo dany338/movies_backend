@@ -6,16 +6,16 @@ export class Movie {
   @PrimaryGeneratedColumn()
   id: number;
 
-  @Column({ type: 'varchar', length: 50 })
+  @Column({ type: 'varchar', length: 100 })
   name: string;
 
   @Column({ type: 'varchar', length: 20 })
   gender: string;
 
-  @Column({ type: 'integer', length: 3 })
+  @Column({ type: 'int' })
   rating: number;
 
-  @Column({ type: 'varchar', length: 200 })
+  @Column({ type: 'varchar', length: 250 })
   description: string;
 
   @Column({ type: 'boolean' })

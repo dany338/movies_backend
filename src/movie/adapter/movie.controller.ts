@@ -8,11 +8,7 @@ export class RoleController {
   constructor(private useCase: MovieUseCase) {}
 
   async list(req: Request, res: Response) {
-    // const params = req.params;
-    // const public = true;
-    // const user = +params.user;
-    // [{ user }, { public }]
-    const result = await this.useCase.list(); // { user, public }
+    const result = await this.useCase.list();
     res.json(result);
   }
 

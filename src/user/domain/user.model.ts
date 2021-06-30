@@ -4,5 +4,5 @@ export interface UserModel {
   email: string;
   password: string;
   refreshToken?: string;
-  movies: any[];
+  movies?: any[];
 }
